@@ -18,25 +18,22 @@
         <center> <b> <h1>Resume</h1></b></center>
                     <hr>
         
-
-        
-       <@foreach($data as $student)
       
               <label for="id"><b>Student ID    </b></label>
-              <input type="number" class="form-control bg-secondary" placeholder="{{ student -> id }}" name="id" required><br>
+              <input type="number" class="form-control bg-secondary" value="{{$data['id']}}" name="id" required><br>
 
 
               <label for="name"><b>Name    </b></label>
-              <input type="text" class="form-control bg-secondary" placeholder="Enter Name" name="name" required><br>
+              <input type="text" class="form-control bg-secondary" value="{{$data['name']}}" name="name" required><br>
 
               <label for="email"><b>E-mail  </b></label>
-              <input type="email" class="form-control bg-secondary" placeholder="Enter email" name="email" required><br>
+              <input type="email" class="form-control bg-secondary" value="{{$data['email']}}" name="email" required><br>
 
               <label for="address"><b>Address </b></label>
-              <input type="text" class="form-control bg-secondary" placeholder="Enter Address" name="address" required><br>
+              <input type="text" class="form-control bg-secondary" value="{{$data['address']}}" name="address" required><br>
 
               <label for="qualification"><b>Qualification</b></label>
-              <input type="text" class="form-control bg-secondary" placeholder="Repeat Qualification" name="qualification" required><br>
+              <input type="text" class="form-control bg-secondary" value="{{$data['qualification']}}" name="qualification" required><br>
 
 
               <label for="gender" ><b>Gender</b></label><br>
@@ -48,7 +45,7 @@
 
 
               <label for="age"><b>age</b></label>
-              <input type="text" placeholder="Enter Age" name="age" class="form-control bg-secondary" required><br>
+              <input type="text" value="{{$data['age']}}" name="age" class="form-control bg-secondary" required><br>
 
               <label for="branch"><b>Branch</b></label>
               <select class="form-control" name="branch">

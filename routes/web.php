@@ -14,9 +14,8 @@
 Route::get('/stud', function () {
     return view('myapp.resume1');
 });
-Route::get('/view', function () {
-    return view('myapp.viewstudent');
-});
+Route::get('/view', 'displaycontroller@display');
+
 Route::get('/1', function () {
     return view('myapp.soption');
 });
